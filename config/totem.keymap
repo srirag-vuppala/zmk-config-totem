@@ -23,10 +23,13 @@
 #define TVP2 5
 
 &mt {
-    quick-tap-ms = <100>;
+    quick-tap-ms = <175>;
     global-quick-tap;
-    flavor = "tap-preferred";
-    tapping-term-ms = <170>;
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    hold-trigger-on-release;
+    hold-trigger-key-positions = <10 11 12 13 16 17 18 19>;
+    require-prior-idle-ms = <150>;
 };
 
 / {
@@ -52,6 +55,11 @@
         Cut {
             bindings = <&kp LG(X)>;
             key-positions = <22 24>;
+        };
+
+        bt_activate {
+            bindings = <&sl 3>;
+            key-positions = <36 37 32 33>;
         };
     };
 
@@ -94,10 +102,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp Q        &kp W       &kp E            &kp R        &kp T        &kp Y          &kp U        &kp I       &kp O       &kp P
-           &mt LCTRL A  &mt LALT S  &mt LGUI D       &mt LSHFT F  &kp G        &kp H          &mt RSHFT J  &mt RGUI K  &mt RALT L  &mt RCTRL SEMI
-&lt 1 ESC  &kp Z        &kp X       &kp C            &kp V        &kp B        &kp N          &kp M        &kp COMMA   &kp DOT     &kp FSLH        &lt 1 SQT
-                                    &lt 3 AMPERSAND  &kp SPACE    &kp SPACE    &kp BACKSPACE  &kp ENTER    &mo 2
+           &kp Q        &kp W       &kp E       &kp R        &kp T        &kp Y          &kp U        &kp I       &kp O       &kp P
+           &mt LCTRL A  &mt LALT S  &mt LGUI D  &mt LSHFT F  &kp G        &kp H          &mt RSHFT J  &mt RGUI K  &mt RALT L  &mt RCTRL SEMI
+&lt 1 ESC  &kp Z        &kp X       &kp C       &kp V        &kp B        &kp N          &kp M        &kp COMMA   &kp DOT     &kp FSLH        &lt 1 SQT
+                                    &none       &kp SPACE    &kp SPACE    &kp BACKSPACE  &kp ENTER    &mo 2
             >;
         };
 
@@ -119,12 +127,12 @@
             >;
         };
 
-        bt {
+        bt_sys {
             bindings = <
-        &trans        &trans        &trans        &trans        &trans          &trans  &trans      &trans      &trans  &trans
-        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &bt BT_NXT  &bt BT_PRV  &trans  &bt BT_CLR_ALL
-&trans  &trans        &trans        &trans        &trans        &trans          &trans  &trans      &trans      &trans  &trans          &bt BT_CLR
-                                    &trans        &trans        &trans          &trans  &trans      &trans
+        &trans        &trans        &trans        &trans        &trans          &sys_reset  &trans      &trans      &trans  &trans
+        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans      &bt BT_NXT  &bt BT_PRV  &trans  &bt BT_CLR_ALL
+&trans  &trans        &trans        &trans        &trans        &trans          &trans      &trans      &trans      &trans  &trans          &bt BT_CLR
+                                    &trans        &trans        &trans          &trans      &trans      &trans
             >;
         };
 
