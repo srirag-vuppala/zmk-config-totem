@@ -141,7 +141,7 @@
             bindings = <
         &kp GRAVE  &kp UNDERSCORE  &kp LPAR  &kp RIGHT_PARENTHESIS  &kp PLUS            &trans    &kp C_VOL_DN  &kp C_MUTE        &kp C_VOL_UP  &trans
         &kp TILDE  &kp MINUS       &kp LBRC  &kp RIGHT_BRACE        &kp EQUAL           &kp LEFT  &kp DOWN      &kp UP            &kp RIGHT     &trans
-&trans  &trans     &kp LESS_THAN   &kp LBKT  &kp RIGHT_BRACKET      &kp GREATER_THAN    &trans    &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &trans  &trans
+&trans  &kp PIPE   &kp LESS_THAN   &kp LBKT  &kp RIGHT_BRACKET      &kp GREATER_THAN    &trans    &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &trans  &trans
                                    &trans    &trans                 &trans              &trans    &trans        &trans
             >;
         };
