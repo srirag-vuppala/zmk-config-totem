@@ -65,6 +65,11 @@
             bindings = <&kp LG(RIGHT_BRACE)>;
             key-positions = <18 19>;
         };
+
+        application_switch_next {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <29 30>;
+        };
     };
 
     macros {
