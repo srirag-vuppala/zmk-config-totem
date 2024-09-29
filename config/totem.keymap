@@ -13,6 +13,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 
 #define BASE 0
 #define NAV  1
@@ -67,8 +68,8 @@
         };
 
         application_switch_next {
-            bindings = <&kp LG(TAB)>;
-            key-positions = <29 30>;
+            bindings = <&kt LGUI>;
+            key-positions = <0 1 2 3>;
         };
     };
 
