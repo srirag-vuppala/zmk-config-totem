@@ -106,7 +106,7 @@
         delete_word_vim: delete_word_vim {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp D>, <&macro_release>, <&kp W>;
+            bindings = <&kp D>, <&macro_release>, <&kp W>, <&macro_release>;
 
             label = "DELETE_WORD_VIM";
         };
