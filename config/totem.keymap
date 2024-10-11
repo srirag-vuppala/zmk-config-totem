@@ -80,6 +80,11 @@
             bindings = <&kp LG(LA(LC(LS(G))))>;
             key-positions = <34 14>;
         };
+
+        dw {
+            bindings = <&delete_word_vim>;
+            key-positions = <2 1>;
+        };
     };
 
     macros {
@@ -96,6 +101,14 @@
                 <&kp LSHFT>,
                 <&macro_tap>,
                 <&kp G &kp I &kp F>;
+        };
+
+        delete_word_vim: delete_word_vim {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D>, <&macro_release>, <&kp W>;
+
+            label = "DELETE_WORD_VIM";
         };
     };
 
