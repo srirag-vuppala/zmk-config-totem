@@ -175,9 +175,9 @@
 
         sym_nav {
             bindings = <
-        &kp GRAVE  &kp UNDERSCORE  &kp LPAR  &kp RIGHT_PARENTHESIS  &kp PLUS            &kp HOME  &kp PAGE_DOWN  &kp PG_UP         &kp END     &trans
-        &kp TILDE  &kp MINUS       &kp LBRC  &kp RIGHT_BRACE        &kp EQUAL           &kp LEFT  &kp DOWN       &kp UP            &kp RIGHT   &trans
-&trans  &kp PIPE   &kp LESS_THAN   &kp LBKT  &kp RIGHT_BRACKET      &kp GREATER_THAN    &trans    &kp C_PREV     &kp C_PLAY_PAUSE  &kp C_NEXT  &kp BACKSLASH  &trans
+        &kp GRAVE  &kp UNDERSCORE  &kp LPAR  &kp RIGHT_PARENTHESIS  &kp PLUS            &trans    &kp END        &kp HOME   &trans     &trans
+        &kp TILDE  &kp MINUS       &kp LBRC  &kp RIGHT_BRACE        &kp EQUAL           &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &trans
+&trans  &kp PIPE   &kp LESS_THAN   &kp LBKT  &kp RIGHT_BRACKET      &kp GREATER_THAN    &trans    &kp PAGE_DOWN  &kp PG_UP  &trans     &kp BACKSLASH  &trans
                                    &trans    &kp LALT               &kp LGUI            &trans    &kp DELETE     &trans
             >;
         };
